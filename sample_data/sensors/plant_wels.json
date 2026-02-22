@@ -1,0 +1,7 @@
+[
+  {"machine_id": "M-004", "ts": "2026-01-15T08:00:00Z", "metric": "temperature_c", "value": 68.9},
+  {"machine_id": "M-004", "ts": "2026-01-15T08:05:00Z", "metric": "temperature_c", "value": 69.4},
+  {"machine_id": "M-005", "ts": "2026-01-15T08:00:00Z", "metric": "pressure_bar", "value": 3.95},
+  {"machine_id": "M-006", "ts": "2026-01-15T08:00:00Z", "metric": "vibration_mm_s", "value": 0.78},
+  {"machine_id": "M-006", "ts": "2026-01-15T08:05:00Z", "metric": "vibration_mm_s", "value": 0.81}
+]
