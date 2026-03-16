@@ -11,7 +11,7 @@ DB = ROOT / "out" / "warehouse.db"
 SCHEMA = ROOT / "sql" / "schema.sql"
 
 
-def write(machines: pd.DataFrame, readings: pd.DataFrame, db: Path = DB) -> int:
+def load(machines: pd.DataFrame, readings: pd.DataFrame, db: Path = DB) -> int:
     db.parent.mkdir(parents=True, exist_ok=True)
     db.unlink(missing_ok=True)
     with sqlite3.connect(db) as con:
