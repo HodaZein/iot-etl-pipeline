@@ -13,7 +13,7 @@ def clean_sensors(df: pd.DataFrame) -> pd.DataFrame:
     out = out.dropna(subset=["ts"])
     # keep numeric values only (drop nulls)
     out = out[out["value"].notna()]
-    # drop exct duplicates
+    # drop exact duplicates
     out = out.drop_duplicates(subset=["machine_id", "ts", "metric"])
     # iso strings for sqlite
     out["ts"] = out["ts"].dt.strftime("%Y-%m-%dT%H:%M:%SZ")
