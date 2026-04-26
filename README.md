@@ -4,6 +4,8 @@ small ETL I wrote on the side to play with iot-sensor-style data. nothing from w
 
 idea: bunch of heterogeneous JSON sensor streams + a master CSV of machines -> cleaned sqlite warehouse you can query.
 
+**live results report:** https://hodazein.github.io/iot-etl-pipeline/ (runs the pipeline + shows what comes out)
+
 ## what it does
 1. read raw sensor JSON files from `sample_data/sensors/`
 2. read master CSV `sample_data/machines.csv`
